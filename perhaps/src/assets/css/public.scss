@@ -45,6 +45,17 @@ body {
 ol, ul {
   list-style: none;
 }
+a{
+  text-decoration:none;
+  color: rgba(18, 57, 50,1);
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  outline:none;
+  background: none;
+  text-decoration: none;
+}
 blockquote, q {
   quotes: none;
 }
@@ -62,8 +73,8 @@ b, strong {
 }
 //swiper
 .swiper-pagination-bullet{
-  width:60px !important;
-  height:6px !important;
-  background:rgba(174,174,174,1) !important;
+  width: 45px !important;
+  height: 6px !important;
+  background: rgba(174,174,174,1) !important;
   border-radius: 20% !important;
 }

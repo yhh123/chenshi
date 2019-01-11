@@ -1,21 +1,21 @@
 <template>
   <div class="main-wrapper">
-    <!--导航-->
-    <div class="header">
-      <img src="../../assets/images/icon-menu.png" class="icon-menu">
-      <img src="../../assets/images/icon-logo.png" class="logo-img">
-    </div>
+    <!--nav-->
+    <FxHeader></FxHeader>
     <!--banner container-->
     <div class="banner-container">
-      <!--<img src="../../assets/images/img" class="img-banner">-->
-      <div class="banner-text">
-        START<br>
-        DIN<br>
-        HYGGE
+      <img src="../../assets/images/img-banner.png" class="img-banner">
+      <div class="banner-text--container">
+        <p class="banner-text">
+          START<br>
+          DIN<br>
+          HYGGE
+        </p>
       </div>
     </div>
-    <!--goods one-->
-    <div class="shelf-container">
+    <!--goods one 置物架-->
+    <router-link :to="{name:'linkShelf'}">
+      <div class="shelf-container">
       <div class="shelf-text--container">
         <p class="shelf-title">Link 墙面置物架</p>
         <div class="shelf-category">
@@ -27,97 +27,96 @@
         </div>
       </div>
     </div>
-    <div class="shelf-swiper--container">
-      <swiper :options="swiperOption" ref="mySwiper">
-        <!-- slides -->
-        <swiper-slide>
-          <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/shelf-shuffling-one.png" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/shelf-shuffling-two.png" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/shelf-shuffling-three.png" alt="">
-        </swiper-slide>
+      <div class="shelf-swiper--container">
+        <swiper :options="swiperOption" ref="mySwiper">
+          <!-- slides -->
+          <swiper-slide>
+            <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/shelf-shuffling-one.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/shelf-shuffling-two.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/shelf-shuffling-three.png" alt="">
+          </swiper-slide>
 
-        <!-- Add Pagination -->
-        <div class="swiper-pagination" slot="pagination"></div>
-      </swiper>
-    </div>
-    <!--goods two-->
-    <div class="shelf-container">
-      <div class="shelf-text--container">
-        <p class="shelf-title">Hygge 曲木摇椅</p>
-        <div class="shelf-category">
-          <p>坐趟舒适</p>
-          <p class="square"></p>
-          <p>大角度摇摆</p>
-          <p class="square"></p>
-          <p>创新曲木</p>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </div>
+    </router-link>
+    <!--goods two 曲木摇椅-->
+    <router-link :to="{name:'rockingChair'}">
+      <div class="shelf-container">
+        <div class="shelf-text--container">
+          <p class="shelf-title">Hygge 曲木摇椅</p>
+          <div class="shelf-category">
+            <p>坐趟舒适</p>
+            <p class="square"></p>
+            <p>大角度摇摆</p>
+            <p class="square"></p>
+            <p>创新曲木</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="shelf-swiper--container">
-      <swiper :options="swiperOption" ref="mySwiper">
-        <!-- slides -->
-        <swiper-slide>
-          <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/shelf-shuffling-one.png" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/shelf-shuffling-two.png" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/shelf-shuffling-three.png" alt="">
-        </swiper-slide>
+      <div class="shelf-swiper--container">
+        <swiper :options="swiperOption" ref="mySwiper">
+          <!-- slides -->
+          <swiper-slide>
+            <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/chair-shuffling-one.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/chair-shuffling-two.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/chair-shuffling-three.png" alt="">
+          </swiper-slide>
 
-        <!-- Add Pagination -->
-        <div class="swiper-pagination" slot="pagination"></div>
-      </swiper>
-    </div>
-    <!--goods three-->
-    <div class="shelf-container">
-      <div class="shelf-text--container">
-        <p class="shelf-title">Hygge 曲木凳</p>
-        <div class="shelf-category">
-          <p>经典百搭</p>
-          <p class="square"></p>
-          <p>实用性强</p>
-          <p class="square"></p>
-          <p>创新曲木</p>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </div>
+    </router-link>
+    <!--goods three 曲木脚凳-->
+    <router-link :to="{name:'stool'}">
+      <div class="shelf-container">
+        <div class="shelf-text--container">
+          <p class="shelf-title">Hygge 曲木凳</p>
+          <div class="shelf-category">
+            <p>经典百搭</p>
+            <p class="square"></p>
+            <p>实用性强</p>
+            <p class="square"></p>
+            <p>创新曲木</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="shelf-swiper--container">
-      <swiper :options="swiperOption" ref="mySwiper">
-        <!-- slides -->
-        <swiper-slide>
-          <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/shelf-shuffling-one.png" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/shelf-shuffling-two.png" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/shelf-shuffling-three.png" alt="">
-        </swiper-slide>
+      <div class="shelf-swiper--container">
+        <swiper :options="swiperOption" ref="mySwiper">
+          <!-- slides -->
+          <swiper-slide>
+            <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/footstool-shuffing-one.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/footstool-shuffing-two.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/footstool-shuffing-three.png" alt="">
+          </swiper-slide>
 
-        <!-- Add Pagination -->
-        <div class="swiper-pagination" slot="pagination"></div>
-      </swiper>
-    </div>
-  <!--footer-->
-    <div class="footer-container">
-      <img src="../../assets/images/icon-footer-logo.png" class="icon-footer-logo">
-      <div class="footer-diviMore--serviceder">
-        <p class="perhaps-team">或许团队</p>
-        <p class="business-cooperation">商务合作</p>
-        <p class="working-time">工作日9:30-18:30</p>
-        <p class="phone-number">400-048-0806</p>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
       </div>
-    </div>
+    </router-link>
+    <!--footer-->
+    <FxFooter></FxFooter>
   </div>
 </template>
 
 <script>
+  import FxHeader from '@/components/block/FxHeader'
+  import FxFooter from '@/components/block/FxFooter'
   export default {
     name: 'perhapsIndax',
     data () {
@@ -129,7 +128,7 @@
             crossFade: true
           },
           pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination'
           }
           // pagination: {
           //   el: '.swiper-pagination',
@@ -138,9 +137,14 @@
         }
       }
     },
+    components: {
+      FxHeader,
+      FxFooter
+    },
     methods: {
     },
     created () {
+      document.title = '或许'
     }
   }
 </script>
@@ -169,19 +173,24 @@
     .banner-container{
       width: 100%;
       height: 1180px;
-      background-color: pink;
+      position: relative;
       .img-banner{
         width: 100%;
         height: 1180px;
-        background-color: pink;
+        /*background-color: pink;*/
       }
-      .banner-text{
-        font-size: 70px;
-        font-weight: 500;
-        color: rgba(255,255,255,1);
-        transform: translateY(175px);
-        line-height: 80px;
-        letter-spacing: 8px;
+      .banner-text--container{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        .banner-text{
+          font-size: 70px;
+          font-weight: 500;
+          color: rgba(255,255,255,1);
+          transform: translateY(165px);
+          line-height: 80px;
+          letter-spacing: 8px;
+        }
       }
     }
     .shelf-container{
@@ -214,49 +223,7 @@
     .shelf-swiper--container{
       .shelf-shuffling{
         width: 100%;
-        height: 900px;
-      }
-    }
-    .footer-container{
-      width: 100%;
-      padding: 100px 0 130px;
-      background-color: black;
-      /*background: url("../../assets/images/bag-footer.png");*/
-      background-size: 100% 100%;
-      .icon-footer-logo{
-        width: 240px;
-        height: 77px;
-      }
-      .footer-diviMore--serviceder{
-        width: 80%;
-        border-top: 1px solid white;
-        margin: 30px auto 0;
-        .perhaps-team{
-          margin-top: 55px;
-          font-size: 36px;
-          font-weight: 400;
-          color: rgba(255,255,255,1);
-        }
-        .business-cooperation{
-          margin-top: 55px;
-          font-size: 36px;
-          font-weight: 400;
-          color: rgba(255,255,255,1);
-          opacity: 0.4;
-        }
-        .working-time{
-          margin-top: 55px;
-          font-size:29px;
-          font-weight:400;
-          color:rgba(255,255,255,1);
-          opacity:0.7;
-        }
-        .phone-number{
-          margin-top: 20px;
-          font-size:60px;
-          font-weight:300;
-          color:rgba(255,255,255,1);
-        }
+        height: 100%;
       }
     }
   }
