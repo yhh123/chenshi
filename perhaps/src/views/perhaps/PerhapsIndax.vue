@@ -51,7 +51,7 @@
         <div class="shelf-text--container">
           <p class="shelf-title">Hygge 曲木摇椅</p>
           <div class="shelf-category">
-            <p>坐趟舒适</p>
+            <p>坐躺舒适</p>
             <p class="square"></p>
             <p>大角度摇摆</p>
             <p class="square"></p>
@@ -211,6 +211,9 @@
           justify-content: center;
           align-items: center;
           margin-top: 55px;
+          p{
+            font-size: 32px;
+          }
           .square{
             width: 9px;
             height: 9px;

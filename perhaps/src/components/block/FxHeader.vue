@@ -58,15 +58,16 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      margin: 0 50px 0 50px;
       .icon-menu{
         width: 60px;
         height: 60px;
         position: absolute;
-        left: 67px;
+        left: 0;
       }
       .logo-img{
-        width: 112px;
-        height: 72px;
+        width: 100px;
+        height: 62px;
       }
     }
     /*弹窗*/

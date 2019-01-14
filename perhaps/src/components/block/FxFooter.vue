@@ -22,8 +22,8 @@
     background: url("../../assets/images/bag-footer.png");
     background-size: 100% 100%;
     .icon-footer-logo{
-      width: 240px;
-      height: 77px;
+      width: 25%;
+      height: 100%;
     }
     .footer-diviMore--serviceder{
       width: 80%;
@@ -32,26 +32,26 @@
       .perhaps-team{
         margin-top: 55px;
         font-size: 36px;
-        font-weight: 400;
+        font-weight: 500;
         color: rgba(255,255,255,1);
       }
       .business-cooperation{
         margin-top: 55px;
         font-size: 36px;
-        font-weight: 400;
+        font-weight: 500;
         color: rgba(255,255,255,1);
       }
       .working-time{
         margin-top: 55px;
-        font-size:29px;
-        font-weight:400;
-        color:rgba(255,255,255,1);
-        opacity:0.7;
+        font-size: 29px;
+        font-weight: 400;
+        color: rgba(255,255,255,1);
+        opacity: 0.7;
       }
       .phone-number{
         margin-top: 20px;
-        font-size:60px;
-        font-weight:300;
+        font-size:44px;
+        font-weight:500;
         color:rgba(255,255,255,1);
       }
     }

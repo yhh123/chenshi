@@ -6,8 +6,10 @@
     <div class="buy-container">
       <div class="buy-placeholder"></div>
       <div class="buy-block">
-        <p class="goods-name">Link墙面曲木置物架</p>
-        <button class="buy-btn">购买</button>
+        <div class="buy">
+          <p class="goods-name">Link墙面曲木置物架</p>
+          <button class="buy-btn">购买</button>
+        </div>
       </div>
     </div>
     <!--link 置物架轮播图-->
@@ -47,6 +49,20 @@
     <!--颜色-->
     <div class="good-color--container">
       <p class="good-color-title">颜色</p>
+      <div class="color-container">
+        <div class="ye-ecru--hook" @click="commodityColor('ye-ecru')">
+          <img class="icon-color" src="../../assets/images/color-ye-ecru.png">
+          <img :class="['icon-none', activeTab === 'ye-ecru' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+        </div>
+        <div class="caramel-hook" @click="commodityColor('caramel')">
+          <img class="icon-color" src="../../assets/images/color-caramel.png">
+          <img :class="['icon-none', activeTab === 'caramel' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+        </div>
+      </div>
+      <div class="goods-img--container">
+        <img v-if="activeTab === 'ye-ecru'" class="goods-img img--ye-ecru" src="../../assets/images/color-img--ye-ecru.png">
+        <img v-if="activeTab === 'caramel'" class="goods-img img--caramel" src="../../assets/images/color-img--caramel.png">
+      </div>
     </div>
     <div class="gray-block"></div>
     <!--商品详细介绍-->
@@ -107,7 +123,9 @@
           //   el: '.swiper-pagination',
           //   clickable: true
           // }
-        }
+        },
+
+        activeTab: 'ye-ecru'
       }
     },
     components: {
@@ -128,6 +146,10 @@
         } else {
           document.querySelector('.buy-block').style.top = '0px'
         }
+      },
+      // 颜色分类
+      commodityColor (tab) {
+        this.activeTab = tab
       }
     },
     destroyed () { // 离开该页面需要移除这个监听的事件
@@ -156,23 +178,29 @@
         width: 100%;
         height:100px;
         background: rgba(255,255,255,.9);
+        z-index: 999;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        z-index: 999;
-        .goods-name{
-          font-size: 40px;
-          font-weight: 400;
-          color: rgba(18,57,50,1);
-        }
-        .buy-btn{
-          width: 130px;
-          height: 68px;
-          background: rgba(48,103,93,1);
-          border-radius: 4px;
-          font-size: 22px;
-          font-weight: 500;
-          color: rgba(255,255,255,1);
+        .buy{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          padding: 0 50px 0 50px;
+          justify-content: space-between;
+          .goods-name{
+            font-size: 40px;
+            font-weight: 400;
+            color: rgba(18,57,50,1);
+          }
+          .buy-btn{
+            width: 130px;
+            height: 68px;
+            background: rgba(48,103,93,1);
+            border-radius: 4px;
+            font-size: 32px;
+            font-weight: 500;
+            color: rgba(255,255,255,1);
+          }
         }
       }
     }
@@ -246,6 +274,65 @@
         border-bottom: 3px solid rgba(0, 0, 0, .2);
         padding-bottom: 10px;
         text-align: left;
+      }
+      .color-container{
+        height: 70px;
+        display: flex;
+        margin-top: 35px;
+        /*align-items: center;*/
+        .ye-ecru--hook{
+          .icon-color{
+            width:68px;
+            height:68px;
+            position: absolute;
+          }
+          .icon-none{
+            width:0;
+            height:0;
+            position: absolute;
+          }
+          .icon-hook{
+            width: 50px !important;
+            height: 50px !important;
+            margin: 1.5% 1.5%;
+            /*display: block;*/
+
+          }
+        }
+        .caramel-hook{
+          .icon-none{
+            width:0;
+            height:0;
+            position: absolute;
+            left: 140px;
+          }
+          .icon-color{
+            width:68px;
+            height:68px;
+            position: absolute;
+            left: 140px;
+          }
+          .icon-hook{
+            width: 50px !important;
+            height: 50px !important;
+            margin: 1.5% 1.5%;
+            /*display: block;*/
+          }
+        }
+      }
+      .goods-img--container{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 120px;
+        background:rgba(244,244,244,1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 20px;
+        margin-top: 20px;
+        .goods-img{
+          width: 60%;
+        }
       }
     }
     .gray-block {

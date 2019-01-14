@@ -25,34 +25,34 @@
       <div class="members-data--container">
         <ul class="members-data-block--top members-data--block">
           <li class="members-data">
-            <img class="members-img" src="../../assets/images/people-zhou.png">
+            <img class="members-img" src="http://plbch8j6c.bkt.clouddn.com/people-zhou.png">
             <p class="members-name">李一舟</p>
             <p class="members-position">创始人/CEO</p>
           </li>
           <li class="members-data">
-            <img class="members-img" src="../../assets/images/people-gong.png">
+            <img class="members-img" src="http://plbch8j6c.bkt.clouddn.com/people-gong.png">
             <p class="members-name">宫平</p>
             <p class="members-position">联合创始人</p>
           </li>
           <li class="members-data">
-            <img class="members-img" src="../../assets/images/people-hui.png">
+            <img class="members-img" src="http://plbch8j6c.bkt.clouddn.com/people-hui.png">
             <p class="members-name">曾晖</p>
             <p class="members-position">产品总监/VP</p>
           </li>
         </ul>
         <ul class="members-data-block--buttom members-data--block">
           <li class="members-data">
-            <img class="members-img" src="../../assets/images/people-hang.png">
+            <img class="members-img" src="http://plbch8j6c.bkt.clouddn.com/people-hang.png">
             <p class="members-name">亢海生</p>
             <p class="members-position">供应链总监</p>
           </li>
           <li class="members-data">
-            <img class="members-img" src="../../assets/images/people-li.png">
+            <img class="members-img" src="http://plbch8j6c.bkt.clouddn.com/people-li.png">
             <p class="members-name">李俊魁</p>
             <p class="members-position">设计总监/工业设计师</p>
           </li>
           <li class="members-data">
-            <img class="members-img" src="../../assets/images/people-meng.png">
+            <img class="members-img" src="http://plbch8j6c.bkt.clouddn.com/people-meng.png">
             <p class="members-name">刘蒙蒙</p>
             <p class="members-position">财务总监</p>
           </li>
@@ -113,7 +113,7 @@
         height: 100%;
       }
       .banner-text-container{
-        padding: 110px 0 110px 45px;
+        padding: 110px 0 110px 50px;
         .banner-text--title{
           font-size: 50px;
           font-weight: 500;
@@ -138,7 +138,7 @@
       background: rgba(244,244,244,1);
     }
     .core-members--container{
-      margin: 100px 45px 0 45px;
+      margin: 100px 50px 0 50px;
       text-align: left;
       .core-members--title{
         font-size: 50px;
@@ -190,14 +190,14 @@
     }
     .learn-about--container{
       padding: 100px 0;
-      background:rgba(244,244,244,1);
+      background: rgba(244,244,244,1);
       .learn-about--title{
         width: 85%;
-        margin: 0 auto;
+        margin: 0 50px;
         text-align: left;
-        font-size:45px;
-        font-weight:500;
-        color:rgba(27,27,27,1);
+        font-size: 45px;
+        font-weight: 500;
+        color: rgba(27,27,27,1);
       }
       .learn-about--box{
         width: 85%;
@@ -205,7 +205,7 @@
         flex-direction: row;
         justify-content: space-between;
         border-top: 2px solid rgba(0,0,0,.3);
-        margin: 20px auto 0;
+        margin: 20px 50px 0;
         padding-top: 30px;
         .box-left{
           text-align: left;
@@ -230,9 +230,9 @@
           }
           .code-name{
             font-size: 17px;
-            font-weight:400;
-            color:rgba(0,0,0,1);
-            opacity:0.7;
+            font-weight: 400;
+            color: rgba(0,0,0,1);
+            opacity: 0.7;
             margin-top: 8px;
           }
         }
