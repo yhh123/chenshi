@@ -99,6 +99,12 @@
       FxFooter
     },
     methods: {
+
+    },
+    mounted () {
+      this.$router.afterEach((to, from, next) => {
+        window.scrollTo(0, 0)
+      })
     },
     created () {
       document.title = '或许 Team'

@@ -103,6 +103,11 @@
       FxHeader,
       FxFooter
     },
+    mounted () {
+      this.$router.afterEach((to, from, next) => {
+        window.scrollTo(0, 0)
+      })
+    },
     created () {
       document.title = '商务合作'
     }

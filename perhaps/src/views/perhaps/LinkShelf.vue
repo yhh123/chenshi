@@ -134,6 +134,10 @@
     },
     mounted () { // 给window添加一个滚动滚动监听事件
       window.addEventListener('scroll', this.handleScroll)
+
+      this.$router.afterEach((to, from, next) => {
+        window.scrollTo(0, 0)
+      })
     },
     methods: {
       handleScroll () { // 改变元素#searchBar的top值
