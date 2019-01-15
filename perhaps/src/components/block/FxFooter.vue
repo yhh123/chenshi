@@ -1,7 +1,7 @@
 <template>
   <!--footer-->
   <div class="footer-container">
-    <img src="../../assets/images/icon-footer-logo.png" class="icon-footer-logo">
+    <img src="http://plbch8j6c.bkt.clouddn.com/icon-footer-logo.png" class="icon-footer-logo">
     <div class="footer-diviMore--serviceder">
       <router-link :to="{name:'perhapsTeam'}"><p class="perhaps-team">或许团队</p></router-link>
       <router-link :to="{name:'businessCooperation'}"><p class="business-cooperation">商务合作</p></router-link>
@@ -19,7 +19,7 @@
     padding: 90px 0 120px;
     margin-top: -0.08rem;
     /*background-color: black;*/
-    background: url("../../assets/images/bag-footer.png");
+    background: url("http://plbch8j6c.bkt.clouddn.com/bag-footer.png");
     background-size: 100% 100%;
     .icon-footer-logo{
       width: 25%;

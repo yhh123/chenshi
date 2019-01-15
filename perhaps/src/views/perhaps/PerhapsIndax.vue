@@ -4,7 +4,7 @@
     <FxHeader></FxHeader>
     <!--banner container-->
     <div class="banner-container">
-      <img src="../../assets/images/img-banner.png" class="img-banner">
+      <img src="http://plbch8j6c.bkt.clouddn.com/img-banner.png" class="img-banner">
       <div class="banner-text--container">
         <p class="banner-text">
           START<br>
@@ -31,13 +31,13 @@
         <swiper :options="swiperOption" ref="mySwiper">
           <!-- slides -->
           <swiper-slide>
-            <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/shelf-shuffling-one.png" alt="">
+            <img class="shelf-shuffling-one shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/shelf-shuffling-one.png" alt="">
           </swiper-slide>
           <swiper-slide>
-            <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/shelf-shuffling-two.png" alt="">
+            <img class="shelf-shuffling-two shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/shelf-shuffling-two.png" alt="">
           </swiper-slide>
           <swiper-slide>
-            <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/shelf-shuffling-three.png" alt="">
+            <img class="shelf-shuffling-three shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/shelf-shuffling-three.png" alt="">
           </swiper-slide>
 
           <!-- Add Pagination -->
@@ -63,13 +63,13 @@
         <swiper :options="swiperOption" ref="mySwiper">
           <!-- slides -->
           <swiper-slide>
-            <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/chair-shuffling-one.png" alt="">
+            <img class="shelf-shuffling-one shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/chair-shuffling-one.png" alt="">
           </swiper-slide>
           <swiper-slide>
-            <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/chair-shuffling-two.png" alt="">
+            <img class="shelf-shuffling-two shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/chair-shuffling-two.png" alt="">
           </swiper-slide>
           <swiper-slide>
-            <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/chair-shuffling-three.png" alt="">
+            <img class="shelf-shuffling-three shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/chair-shuffling-three.png" alt="">
           </swiper-slide>
 
           <!-- Add Pagination -->
@@ -95,13 +95,13 @@
         <swiper :options="swiperOption" ref="mySwiper">
           <!-- slides -->
           <swiper-slide>
-            <img class="shelf-shuffling-one shelf-shuffling" src="../../assets/images/footstool-shuffing-one.png" alt="">
+            <img class="shelf-shuffling-one shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/footstool-shuffing-one.png" alt="">
           </swiper-slide>
           <swiper-slide>
-            <img class="shelf-shuffling-two shelf-shuffling" src="../../assets/images/footstool-shuffing-two.png" alt="">
+            <img class="shelf-shuffling-two shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/footstool-shuffing-two.png" alt="">
           </swiper-slide>
           <swiper-slide>
-            <img class="shelf-shuffling-three shelf-shuffling" src="../../assets/images/footstool-shuffing-three.png" alt="">
+            <img class="shelf-shuffling-three shelf-shuffling" src="http://plbch8j6c.bkt.clouddn.com/footstool-shuffing-three.png" alt="">
           </swiper-slide>
 
           <!-- Add Pagination -->

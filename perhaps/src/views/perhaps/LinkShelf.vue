@@ -8,7 +8,7 @@
       <div class="buy-block">
         <div class="buy">
           <p class="goods-name">Link墙面曲木置物架</p>
-          <button class="buy-btn">购买</button>
+          <a href="https://youpin.mi.com/detail?gid=102235"><button class="buy-btn">购买</button></a>
         </div>
       </div>
     </div>
@@ -17,16 +17,16 @@
       <swiper :options="swiperOption" ref="mySwiper">
         <!-- slides -->
         <swiper-slide>
-          <img class="link-shuffling-one link-shuffling" src="../../assets/images/link-shuffling-one.png">
+          <img class="link-shuffling-one link-shuffling" src="http://plbch8j6c.bkt.clouddn.com/link-shuffling-one.png">
         </swiper-slide>
         <swiper-slide>
-          <img class="link-shuffling-two link-shuffling" src="../../assets/images/link-shuffling-two.png">
+          <img class="link-shuffling-two link-shuffling" src="http://plbch8j6c.bkt.clouddn.com/link-shuffling-two.png">
         </swiper-slide>
         <swiper-slide>
-          <img class="link-shuffling-three link-shuffling" src="../../assets/images/link-shuffling-three.png">
+          <img class="link-shuffling-three link-shuffling" src="http://plbch8j6c.bkt.clouddn.com/link-shuffling-three.png">
         </swiper-slide>
         <swiper-slide>
-          <img class="link-shuffling-three link-shuffling" src="../../assets/images/link-shuffling-four.png">
+          <img class="link-shuffling-three link-shuffling" src="http://plbch8j6c.bkt.clouddn.com/link-shuffling-four.png">
         </swiper-slide>
         <!-- Add Pagination -->
         <div class="swiper-pagination" slot="pagination"></div>
@@ -38,11 +38,11 @@
       <div class="dimensions-category">
         <div class="single-layer--container">
           <p class="single-layer--title">单层</p>
-          <img src="../../assets/images/category-single--layer.png" class="single-layer--img">
+          <img src="http://plbch8j6c.bkt.clouddn.com/category-single--layer.png" class="single-layer--img">
         </div>
         <div class="double--container">
           <p class="double--title">双层</p>
-          <img src="../../assets/images/category-double.png" class="double--img">
+          <img src="http://plbch8j6c.bkt.clouddn.com/category-double.png" class="double--img">
         </div>
       </div>
     </div>
@@ -60,8 +60,8 @@
         </div>
       </div>
       <div class="goods-img--container">
-        <img v-if="activeTab === 'ye-ecru'" class="goods-img img--ye-ecru" src="../../assets/images/color-img--ye-ecru.png">
-        <img v-if="activeTab === 'caramel'" class="goods-img img--caramel" src="../../assets/images/color-img--caramel.png">
+        <img v-if="activeTab === 'ye-ecru'" class="goods-img img--ye-ecru" src="http://plbch8j6c.bkt.clouddn.com/color-img--ye-ecru.png">
+        <img v-if="activeTab === 'caramel'" class="goods-img img--caramel" src="http://plbch8j6c.bkt.clouddn.com/color-img--caramel.png">
       </div>
     </div>
     <div class="gray-block"></div>
@@ -71,7 +71,7 @@
         <p class="product-title">一墙一世界  更多生活体验</p>
         <p class="product-text">幸福闪光的日子需要一份曲意感性。生活繁忙，居室拥挤，用优雅北欧原版设计装点墙面，根据不同居室空间需求，自由搭配出多种组合，让每个房间都多出一面墙的使用空间。</p>
       </div>
-      <img src="../../assets/images/link-wall.png" class="link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/link-wall.png" class="link-wall">
       <div class="bent-wood--container wall-container">
         <p class="product-title">
           曲木压制工艺<br/>
@@ -79,7 +79,7 @@
         </p>
         <p class="product-text">天然桦木切削成薄板，层层叠放，经高温加热加压成型。这种工艺保证了各部位含水率及应力的均衡，使定型后的外形、尺寸更为稳定。2.56厘米的轻薄曲木条，可以承托30kg的重量。</p>
       </div>
-      <img src="../../assets/images/link-bent-wood.png" class="bent-wood link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/link-bent-wood.png" class="bent-wood link-wall">
       <div class="strong-stable--container wall-container">
         <p class="product-title">
           坚固稳定<br/>
@@ -87,7 +87,7 @@
         </p>
         <p class="product-text">调节筒采用优质430不锈钢制造，坚固耐用；专业结构设计，经过27次结构设计和修正，可有效弥补打孔时出现的位置偏差。</p>
       </div>
-      <img src="../../assets/images/link-strong-stable.png" class="bent-wood link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/link-strong-stable.png" class="bent-wood link-wall">
       <div class="many-scenarios--container wall-container">
         <p class="product-title">
           多场景使用<br/>
@@ -95,9 +95,9 @@
         </p>
         <p class="product-text">置物架没有固定的组装方式，完全在于不同居室的置物和墙面美化的创意。</p>
       </div>
-      <img src="../../assets/images/link-many-one.png" class="link-many-one link-wall">
-      <img src="../../assets/images/link-many-two.png" class="link-many-two link-wall">
-      <img src="../../assets/images/link-many-three.png" class="link-many-three link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/link-many-one.png" class="link-many-one link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/link-many-two.png" class="link-many-two link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/link-many-three.png" class="link-many-three link-wall">
      </div>
     <!--footer-->
     <FxFooter></FxFooter>

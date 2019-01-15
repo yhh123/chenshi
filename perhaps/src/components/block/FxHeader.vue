@@ -2,17 +2,17 @@
   <div class="header-main">
     <!--导航-->
     <div class="header">
-      <img src="../../assets/images/icon-menu.png" class="icon-menu" @click="showRuleModal = true">
+      <img src="http://plbch8j6c.bkt.clouddn.com/icon-menu.png" class="icon-menu" @click="showRuleModal = true">
 
-      <router-link :to="{name:'perhapsIndax'}"><img src="../../assets/images/icon-logo.png" class="logo-img"></router-link>
+      <router-link :to="{name:'perhapsIndax'}"><img src="http://plbch8j6c.bkt.clouddn.com/icon-logo.png" class="logo-img"></router-link>
     </div>
     <!-- 导航弹窗 -->
     <div class="fx-modal__wrapper" @touchmove.prevent v-if="showRuleModal">
       <div class="fx-mask" @touchmove.prevent></div>
       <div class="fx-modal fx-modal--rules">
         <div class="fx-modal__header">
-          <img class="icon-close" src="../../assets/images/icon-off-btn.png" @click="showRuleModal = false">
-          <img class="icon-logo-white" src="../../assets/images/icon-logo-white.png">
+          <img class="icon-close" src="http://plbch8j6c.bkt.clouddn.com/icon-off-btn.png" @click="showRuleModal = false">
+          <img class="icon-logo-white" src="http://plbch8j6c.bkt.clouddn.com/icon-logo-white.png">
         </div>
         <div class="fx-modal__body">
           <div class="types-furniture--container">

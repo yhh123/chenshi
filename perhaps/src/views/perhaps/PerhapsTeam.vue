@@ -4,7 +4,7 @@
     <FxHeader></FxHeader>
     <!--banner-->
     <div class="banner-container">
-      <img class="team-banner" src="../../assets/images/team-banner.png">
+      <img class="team-banner" src="http://plbch8j6c.bkt.clouddn.com/team-banner.png">
       <div class="banner-text-container">
         <p class="banner-text--title">邂逅或许<br/>
           给幸福多一些设计感
@@ -69,7 +69,7 @@
           <p class="box-left--address"><span>地址：</span><span>北京市朝阳区酒仙桥路4号<br/>极地国际创新中心215</span></p>
         </div>
         <div class="box-right">
-          <img src="../../assets/images/code-img.png" class="code-img">
+          <img src="http://plbch8j6c.bkt.clouddn.com/code-img.png" class="code-img">
           <p class="code-name">或许生活</p>
         </div>
       </div>

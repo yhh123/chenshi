@@ -8,7 +8,7 @@
       <div class="buy-block">
         <div class="buy">
           <p class="goods-name">Hygge曲木凳</p>
-          <button class="buy-btn">购买</button>
+          <a href="https://h5.youzan.com/v2/feature/EEWl5a9u67"><button class="buy-btn">购买</button></a>
         </div>
       </div>
     </div>
@@ -17,13 +17,13 @@
       <swiper :options="swiperOption" ref="mySwiper">
         <!-- slides -->
         <swiper-slide>
-          <img class="rocking-chair-one rocking-chair" src="../../assets/images/stool-shuffling--one.png">
+          <img class="rocking-chair-one rocking-chair" src="http://plbch8j6c.bkt.clouddn.com/stool-shuffling--one.png">
         </swiper-slide>
         <swiper-slide>
-          <img class="rocking-chair-two rocking-chair" src="../../assets/images/stool-shuffling--two.png">
+          <img class="rocking-chair-two rocking-chair" src="http://plbch8j6c.bkt.clouddn.com/stool-shuffling--two.png">
         </swiper-slide>
         <swiper-slide>
-          <img class="rocking-chair-three rocking-chair" src="../../assets/images/stool-shuffling--three.png">
+          <img class="rocking-chair-three rocking-chair" src="http://plbch8j6c.bkt.clouddn.com/stool-shuffling--three.png">
         </swiper-slide>
         <!-- Add Pagination -->
         <div class="swiper-pagination" slot="pagination"></div>
@@ -34,7 +34,7 @@
       <p class="dimensions-title">尺寸规格</p>
       <div class="dimensions-category">
         <div class="single-layer--container">
-          <img src="../../assets/images/stool-size.png" class="chair-dimensions">
+          <img src="http://plbch8j6c.bkt.clouddn.com/stool-size.png" class="chair-dimensions">
         </div>
       </div>
     </div>
@@ -42,39 +42,44 @@
     <div class="good-color--container">
       <p class="good-color-title">颜色</p>
       <div class="color-container">
-      <div class="color-container--framework">
-        <p class="framework-color">框架</p>
-        <div class="ye-ecru--hook" @click="commodityColor('ye-ecru')">
-          <img class="icon-color" src="../../assets/images/color-ye-ecru.png">
-          <img :class="['icon-none', activeTab === 'ye-ecru' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+        <div class="color-container--framework">
+          <p class="framework-color">框架</p>
+          <div class="ye-ecru--hook" @click="commodityColor('ye-ecru')">
+            <img class="icon-color" src="../../assets/images/color-ye-ecru.png">
+            <img :class="['icon-none', activeTab === 'ye-ecru' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+          </div>
+          <div class="caramel-hook" @click="commodityColor('caramel')">
+            <img class="icon-color" src="../../assets/images/color-caramel.png">
+            <img :class="['icon-none', activeTab === 'caramel' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+          </div>
         </div>
-        <div class="caramel-hook" @click="commodityColor('caramel')">
-          <img class="icon-color" src="../../assets/images/color-caramel.png">
-          <img :class="['icon-none', activeTab === 'caramel' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+        <div class="color--chair-cushion">
+          <p class="chair-cushion">椅垫</p>
+          <div v-if="activeTab !== 'caramel'" class="desert-dust--hook" @click="cushionColor('desert-dust')">
+            <img class="icon-color" src="../../assets/images/color-desert-dust.png">
+            <img :class="['icon-none', cushionTab === 'desert-dust' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+          </div>
+          <div v-if="activeTab === 'caramel'" class="desert-dust--no">
+            <img class="icon-color" src="../../assets/images/desert-dust--no.png">
+          </div>
+          <div class="peacock-blue-hook" @click="cushionColor('peacock-blue')">
+            <img class="icon-color" src="../../assets/images/color-peacock-blue.png">
+            <img :class="['icon-none', cushionTab === 'peacock-blue' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+          </div>
+          <div v-if="activeTab !== 'ye-ecru'" class="mber-black" @click="cushionColor('mber-black')">
+            <img class="icon-color" src="../../assets/images/color-mber-black.png">
+            <img :class="['icon-none', cushionTab === 'mber-black' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
+          </div>
+          <div v-if="activeTab === 'ye-ecru'" class="amber-black--no">
+            <img class="icon-color" src="../../assets/images/amber-black--no.png">
+          </div>
         </div>
       </div>
-      <div class="color--chair-cushion">
-        <p class="chair-cushion">椅垫</p>
-        <div class="desert-dust--hook" @click="cushionColor('desert-dust')">
-          <img class="icon-color" src="../../assets/images/color-desert-dust.png">
-          <img :class="['icon-none', cushionTab === 'desert-dust' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
-        </div>
-        <div class="peacock-blue-hook" @click="cushionColor('peacock-blue')">
-          <img class="icon-color" src="../../assets/images/color-peacock-blue.png">
-          <img :class="['icon-none', cushionTab === 'peacock-blue' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
-        </div>
-        <div class="mber-black" @click="cushionColor('mber-black')">
-          <img class="icon-color" src="../../assets/images/color-mber-black.png">
-          <!--<img v-if="activeTab !== 'ye-ecru'" class="icon-color" src="../../assets/images/color-mber-black.png">-->
-          <img :class="['icon-none', cushionTab === 'mber-black' ? 'icon-hook' : '']" src="../../assets/images/icon-hook.png">
-        </div>
-      </div>
-    </div>
       <div class="goods-img--container">
-        <img v-if="activeTab === 'ye-ecru' && cushionTab === 'desert-dust'" class="goods-img color-img-ash-ye" src="../../assets/images/color-img-ash-ye.png">
-        <img v-if="activeTab === 'ye-ecru' && cushionTab === 'peacock-blue'" class="goods-img color-img-blue-ye" src="../../assets/images/color-img-blue-ye.png">
-        <img v-if="activeTab === 'caramel' && cushionTab === 'peacock-blue'" class="goods-img color-img-caramel-blue" src="../../assets/images/color-img-caramel-blue.png">
-        <img v-if="cushionTab === 'mber-black' && activeTab === 'caramel'" class="goods-img color-img-caramel-black" src="../../assets/images/color-img-caramel-black.png">
+        <img v-if="activeTab === 'ye-ecru' && cushionTab === 'desert-dust' || activeTab === 'ye-ecru' && cushionTab === 'mber-black'" class="goods-img color-img-ash-ye" src="http://plbch8j6c.bkt.clouddn.com/stool-img-ash-ye.png">
+        <img v-if="activeTab === 'ye-ecru' && cushionTab === 'peacock-blue'" class="goods-img color-img-blue-ye" src="http://plbch8j6c.bkt.clouddn.com/stool-img-blue-ye.png">
+        <img v-if="activeTab === 'caramel' && cushionTab === 'peacock-blue' || activeTab === 'caramel' && cushionTab === 'desert-dust'" class="goods-img color-img-caramel-blue" src="http://plbch8j6c.bkt.clouddn.com/stool-img-caramel-blue.png">
+        <img v-if="cushionTab === 'mber-black' && activeTab === 'caramel'" class="goods-img color-img-caramel-black" src="http://plbch8j6c.bkt.clouddn.com/stool-img-caramel-black.png">
       </div>
     </div>
     <div class="gray-block"></div>
@@ -88,23 +93,23 @@
         </p>
         <p class="product-text">当我们开始改变自己的生活，即使是像增添一把凳子，换一把椅子这种小确幸，都很有意义。小而美的曲木凳，经过精心雕琢，让设计感和坐感更为讲究，恰到好处的大小，点亮每一个家居场所。</p>
       </div>
-      <img src="../../assets/images/stool-happiness.png" class="link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/stool-happiness.png" class="link-wall">
       <div class="bent-wood--container wall-container">
         <p class="product-title">
           人机工学结构
         </p>
         <p class="product-text">蹬腿与垂直地面方向夹角5°，微微外扩，既保证了外形的美观，又增加了凳子自身的承重。符合人体工学的C形曲线，与椅腿构成飞檐式曲线，营造多维流畅线条，给予臀部舒适的支撑。</p>
       </div>
-      <img src="../../assets/images/stool-people--work.png" class="bent-wood link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/stool-people--work.png" class="bent-wood link-wall">
       <div class="strong-stable--container wall-container">
         <p class="product-title">
           一凳多用  实用美学
         </p>
         <p class="product-text">家里的沙发、座椅已经是老面孔了，不舍得更换，但新鲜感渐失，配合使用小脚凳，突如其来的舒适，欣喜仿若初见。</p>
       </div>
-      <img src="../../assets/images/stool-scenario--one.png" class="link-many-one link-wall">
-      <img src="../../assets/images/stool-scenario--two.png" class="link-many-two link-wall">
-      <img src="../../assets/images/stool-scenario--three.png" class="link-many-three link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/stool-scenario--one.png" class="link-many-one link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/stool-scenario--two.png" class="link-many-two link-wall">
+      <img src="http://plbch8j6c.bkt.clouddn.com/stool-scenario--three.png" class="link-many-three link-wall">
     </div>
     <!--footer-->
     <FxFooter></FxFooter>
@@ -133,7 +138,7 @@
         },
 
         activeTab: 'ye-ecru',
-        cushionTab: 'mber-black'
+        cushionTab: 'peacock-blue'
       }
     },
     components: {
@@ -335,6 +340,14 @@
               /*display: block;*/
             }
           }
+          .desert-dust--no{
+            .icon-color{
+              width:68px;
+              height:68px;
+              position: absolute;
+            }
+          }
+
           .peacock-blue-hook{
             .icon-none{
               width:0;
@@ -375,6 +388,20 @@
               /*display: block;*/
             }
           }
+          .amber-black--no{
+            .icon-none{
+              width:0;
+              height:0;
+              position: absolute;
+              left: 328px;
+            }
+            .icon-color{
+              width:68px;
+              height:68px;
+              position: absolute;
+              left: 328px;
+            }
+          }
         }
       }
       .goods-img--container{
@@ -389,8 +416,8 @@
         margin-top: 20px;
         .goods-img{
           /*width: 65%;*/
-          width: 480px;
-          /*height: 420px;*/
+          width: 346px;
+          height: 390px;
         }
       }
     }
