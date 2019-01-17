@@ -194,7 +194,7 @@
             }
           }
           .platform-data-block--buttom{
-            margin-top: 45px;
+            margin-top: 8px;
           }
         }
       }

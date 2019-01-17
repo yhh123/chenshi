@@ -58,12 +58,14 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      margin: 0 50px 0 50px;
+      /*margin: 0 50px 0 50px;*/
+      /*border-top: 1px solid #000000;*/
+      border-bottom: 0.5px solid #727272;
       .icon-menu{
         width: 60px;
         height: 60px;
         position: absolute;
-        left: 0;
+        left: 50px;
       }
       .logo-img{
         width: 100px;
