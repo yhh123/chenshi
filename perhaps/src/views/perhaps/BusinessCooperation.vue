@@ -230,6 +230,7 @@
           .box-left--address{
             display: flex;
             flex-direction: row;
+            line-height: 36px;
           }
         }
         .box-right{
@@ -240,7 +241,7 @@
             height: 150px;
           }
           .code-name{
-            font-size: 17px;
+            font-size: 24px;
             font-weight: 400;
             color: rgba(0,0,0,1);
             opacity: 0.7;
